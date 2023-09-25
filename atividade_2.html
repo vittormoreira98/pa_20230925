@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ativ. 2</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <br/>
+    <a href="index.html">Voltar</a>
+    
+    <script>
+        let nome1 = prompt('Digite o nome da primeira pessoa:');
+        let peso1 = Number(prompt('Digite o peso da primeira pessoa:'));
+        
+        let nome2 = prompt('Digite o nome da segunda pessoa:');
+        let peso2 = Number(prompt('Digite o peso da segunda pessoa:'));
+
+        if (peso1 > peso2) {
+            document.getElementById("resultado").innerHTML = nome1 + " é mais pesado que " + nome2;
+        }
+        else if (peso2 < peso1) {
+            document.getElementById("resultado").innerHTML = nome2 + " é mais pesado que " + nome1;
+        } else {
+            document.getElementById("resultado").innerHTML = nome1 + " e " + nome2 + " tem o mesmo peso.";
+        }
+        
+    </script>
+</body>
+
+</html>

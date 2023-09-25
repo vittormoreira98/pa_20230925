@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ativ. 1</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <br/>
+    <a href="index.html">Voltar</a>
+    
+    <script>
+        let numero1 = Number(prompt('Digite o primeiro número:'));
+        let numero2 = Number(prompt('Digite o segundo número:'));
+
+        if (numero1 > numero2) {
+            document.getElementById("resultado").innerHTML = numero1 + " é maior que " + numero2;
+        }
+        else if (numero1 < numero2) {
+            document.getElementById("resultado").innerHTML = numero2 + " é maior que " + numero1;
+        } else {
+            document.getElementById("resultado").innerHTML = numero1 + " e " + numero2 + " são iguais.";
+        }
+        
+    </script>
+</body>
+
+</html>

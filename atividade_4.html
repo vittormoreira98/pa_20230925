@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ativ. 4</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <br/>
+    <a href="index.html">Voltar</a>
+
+    <script>
+        let numero = Number(prompt('Digite um numero:'));
+        
+        let par = numero % 2
+        
+        if (par == 0) {    
+            document.getElementById("resultado").innerHTML = numero + " é par";
+        } else {
+            document.getElementById("resultado").innerHTML = numero + " é ímpar";
+        }
+        
+    </script>
+</body>
+
+</html>

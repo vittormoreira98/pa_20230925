@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ativ. 3</title>
+</head>
+
+<body>
+    <p id="frase1"></p>
+    <p id="frase2"></p>
+    <br/>
+    <p id="maisnovo"></p>
+    <br/>
+    <a href="index.html">Voltar</a>
+
+    <script>
+        let nome1 = prompt('Digite o nome da primeira pessoa:');
+        let ano1 = Number(prompt('Digite o ano de nascimento da primeira pessoa:'));
+        
+        let nome2 = prompt('Digite o nome da segunda pessoa:');
+        let ano2 = Number(prompt('Digite o ano de nascimento da segunda pessoa:'));
+        
+        let data = new Date();
+        let anoAtual = data.getFullYear();
+
+        let idade1 = anoAtual - ano1
+        let idade2 = anoAtual - ano2
+        
+        document.getElementById("frase1").innerHTML = "Nome: " + nome1 + "<br/>Idade: " + idade1;
+        document.getElementById("frase2").innerHTML = "Nome: " + nome2 + "<br/>Idade: " + idade2;
+        
+        if (idade1 > idade2) {    
+            document.getElementById("maisnovo").innerHTML = nome2 + " é mais novo";
+        }
+        else if (idade2 < idade1) {
+            document.getElementById("maisnovo").innerHTML = nome1 + " é mais novo";
+        } else {
+            document.getElementById("maisnovo").innerHTML = "Os dois nasceram no mesmo ano";
+        }
+        
+    </script>
+</body>
+
+</html>

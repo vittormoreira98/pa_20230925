@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ativ. 6</title>
+</head>
+
+<body>
+    <p id="resultado"></p>
+    <br/>
+    <a href="index.html">Voltar</a>
+    
+    <script>
+       
+
+var valorFixo = parseFloat(prompt("Digite o valor fixo:"));
+var valorVendas = parseFloat(prompt("Digite o valor de vendas:"));
+
+
+if (valorVendas >= valorFixo) {
+    document.getElementById("resultado").innerHTML = "Ganhou!";
+} else {
+    document.getElementById("resultado").innerHTML = "Não ganhou!";
+}
+        
+    </script>
+</body>
+
+</html>
